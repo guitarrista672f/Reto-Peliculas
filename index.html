@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        /* ================================================== */
+        html{
+            height: 100%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        /* Estilo para el encabezado */
+
+        header{
+           /* position: fixed; */
+           min-width: 100%;
+            background-color: black;
+            color: white;
+            height:20%;
+            text-align:center;
+            padding:1em;
+            margin-bottom: 1em;
+        }
+        header>a{
+            color:white;
+            text-decoration: none;
+            border:1px solid white;
+            padding:1em;
+            
+            
+        }
+        
+
+        /* Estilo para el contenedor de peliculas*/
+        main{
+            display:flex;
+            flex-direction: column;
+            padding: 1em;
+            /* justify-content: center; */
+            align-items: center;
+           
+            
+        } 
+
+       
+
+        /* Estilo para la tarjeta */
+
+        .card-movie{
+            /* border:2px  solid rgba(131, 151, 159, 0.647); */
+            border-top: 1px solid rgba(131, 151, 159, 0.647);
+            border-right: 1px  solid rgba(131, 151, 159, 0.647);
+            border-radius:8px ;
+            padding: 1em;
+            margin-bottom: 2em;
+            box-shadow: 10px 25px 30px rgba(122, 141, 155, 0.683);
+            width:70%;
+            
+        }
+        .card-movie>a{
+            color: rgb(0, 119, 255);
+        }
+
+        .pelicula{
+            width:30%;
+        }
+
+        /* ===================================================== */
+
+    </style>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas Animadas</title>
+</head>
+<body>
+    <header>
+
+        <h1>Películas animadas</h1>
+        <a href="#">Menú</a>
+
+    </header>
+
+    <main>  
+        <div class="card-movie">
+            <img class="pelicula"  src="peliculas_animadas/dragonball.jpg" alt="picture">
+            <h3>Pelicula 1</h3>
+            <p>Descripción del producto </p>
+            <p>$19.99</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="card-movie">
+            <img class="pelicula"  src="peliculas_animadas/conde patula.jpg" alt="picture">
+            <h3>Pelicula 1</h3>
+            <p>Descripción del producto </p>
+            <p>$19.99</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="card-movie">
+            <img class="pelicula"  src="peliculas_animadas/ghost busters.jpg" alt="picture">
+            <h3>Pelicula 1</h3>
+            <p>Descripción del producto </p>
+            <p>$19.99</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="card-movie">
+            <img class="pelicula"  src="peliculas_animadas/Hey Arnold.jpg" alt="picture">
+            <h3>Pelicula 1</h3>
+            <p>Descripción del producto </p>
+            <p>$19.99</p>
+            <a href="#">Comprar</a>
+        </div>
+
+    </main>
+    
+</body>
+</html>
